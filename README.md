@@ -1,6 +1,6 @@
 # patronesConstruccion
 
-##Nota:
+## Nota:
 Mi repositorio es:https://github.com/zmartand/patronesConstruccion.git
 
 ##Enunciados:
@@ -29,3 +29,18 @@ Esta clase implementa la interfaz BaseBuilder y es responsable de construir la b
 
 La razón por la que se utiliza el patrón Builder en este caso es para separar la construcción de un objeto complejo (Base) de su representación, permitiendo la creación de diferentes tipos de bases de emergencias sin cambiar la lógica de construcción. 
 Esto facilita la adición de nuevas representaciones de bases de emergencias y hace que el código sea más flexible y fácil de mantener.
+
+### Ejercicio 2:
+En una aplicación de venta y configuración de ordenadores personales se considera un ordenador como la suma de varios componentes (una unidad central y varios elementos periféricos). El mínimo imprescindible para que se considere un ordenador es la unidad central, un dispositivo de entrada y otro de salida, pero pueden añadirse todos los que deseemos ofertar o que nos pidan los clientes. Para crearlo habrá que dar esos componentes mínimos y se puede modificar la configuración en cualquier momento añadiendo, quitando o cambiando exclusivamente periféricos. Por último, el precio de venta del ordenador es la suma de sus componentes.
+
+Todos componentes tienen información sobre el nombre del fabricante, el modelo y el precio de venta, que cambia con frecuencia.
+
+Los dispositivos de entrada que manejamos actualmente son el teclado, el ratón y la tableta gráfica. En todos los casos necesitamos saber el tipo de conector que utiliza (será un STRING) y los puertos válidos(varios valores de tipo entero).
+
+Los dispositivos de salida de que disponemos son las pantallas y las impresoras (de inyección y láser).
+
+También tenemos que saber los puertos válidos. Además para las impresoras necesitamos saber el tipo de cartucho o "tóner ütilizado y el número de páginas impresas desde el último cambio de "tóner"(sólo para impresoras láser).
+
+Por último tenemos un dispositivo especial, la pantalla táctil que sirve de dispositivo de entrada y de salida simultáneamente.
+
+Diseñe las clases y relaciones que representen una solución adecuada para este problema. Escriba en Replit al menos las clases que representen el ordenador, los dos primeros niveles de la jerarquía de componentes y las impresoras láser. Definir los patrones de diseño utilizado
