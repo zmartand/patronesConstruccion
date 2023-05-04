@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Ejercicio1;
 //Clase Abstract Builder
 
 public interface BaseBuilder {

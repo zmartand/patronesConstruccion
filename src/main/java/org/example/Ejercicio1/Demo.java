@@ -1,8 +1,8 @@
-package org.example;
+package org.example.Ejercicio1;
 
 
 public class Demo {
-    public static void main(String[] args) {
+    public void demo() {
         BaseBuilderImpl baseBuilder = new BaseBuilderImpl();
         baseBuilder.setNombre("Villanueva de la Cañada");
         baseBuilder.addAmbulancia(1);

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Ejercicio1;
 
 //Concrete Builder
 public class BaseBuilderImpl implements BaseBuilder {
