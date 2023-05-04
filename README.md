@@ -3,7 +3,7 @@
 ## Nota:
 Mi repositorio es:https://github.com/zmartand/patronesConstruccion.git
 
-##Enunciados:
+## Enunciados:
 
 ### Ejercicio 1:
 Ejercicio 1
@@ -44,3 +44,10 @@ También tenemos que saber los puertos válidos. Además para las impresoras nec
 Por último tenemos un dispositivo especial, la pantalla táctil que sirve de dispositivo de entrada y de salida simultáneamente.
 
 Diseñe las clases y relaciones que representen una solución adecuada para este problema. Escriba en Replit al menos las clases que representen el ordenador, los dos primeros niveles de la jerarquía de componentes y las impresoras láser. Definir los patrones de diseño utilizado
+
+#### Explicación:
+Para implementar esta aplicación, se han utilizado dos patrones de diseño: Abstract Factory y Builder.
+
+El patrón Abstract Factory se utiliza para crear familias de objetos relacionados sin especificar sus clases concretas. En este caso, se ha utilizado para crear los dispositivos de entrada y salida de los ordenadores. La clase ComponenteFactory es la fábrica abstracta, que define los métodos crearDispositivoEntrada y crearDispositivoSalida, que son utilizados para crear los objetos concretos. La clase DispositivoEntrada y DispositivoSalida son las clases abstractas que representan los dispositivos de entrada y salida.
+
+El patrón Builder se utiliza para construir objetos complejos paso a paso. En este caso, se ha utilizado para construir la configuración de ordenador. La clase Ordenador es la clase que se va a construir, y el Builder es utilizado para definir los pasos necesarios para construir la configuración del ordenador.
